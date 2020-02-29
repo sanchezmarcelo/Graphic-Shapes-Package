@@ -2,9 +2,9 @@
 Prompt:
 Your boss wants software that is capable of the following tasks as well. See full details in the Tasks section below.
 There is a third-party vendor whose software you must use in the application. (JAR file provided) The vendor software allows you to do the following things:
-1. set foreground colors
-2. set background colors
-3. show/hide the drawing - for backward compatibility, the default is that the drawing is visible
+1. Set foreground colors
+2. Set background colors
+3. Show/hide the drawing - for backward compatibility, the default is that the drawing is visible
 See the javadoc for details. To use many of these new features, you must extend the SimpleDrawing class from your third-party vendor and override the relevant methods. SimpleDrawing implements both ComponentListener and MouseListener and adds itself as the listeners for the appropriate events. If you extend SimpleDrawing, you will get the listeners for free. The new event handling methods are piggy-backed onto (wrap) the corresponding methods in the javax.swing package. You can get further information on how to use them there.
 
 Tasks
